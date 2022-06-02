@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=chrome'>
+    <title>Customer login</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+        }
+        
+        body {
+            background-image: url(a.jfif);
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        img {
+            width: 10%;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        div {
+            border-style: groove;
+            border-radius: 12px;
+            text-align: center;
+            background-color: azure;
+            margin: 5px 500px 100px 500px;
+            size: auto;
+        }
+        
+        form {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        a {
+            float: left;
+        }
+        
+        .pp {
+            font-size: 50px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="pp"><b>AJM COURIERS</b></p>
+    <h1>Customer Login</h1>
+    <div>
+        <img src="login.png" alt="login">
+        <form action="customer_login.php" method="post">
+            <label for="email">Registered email</label><br>
+            <input type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br><br>
+            <label for="T_id">Tracking id</label><br>
+            <input type="text" name="T_id" required maxlength="6"><br><br>
+            <button>Login</button>
+        </form>
+    </div>
+    <div>
+        <a href="Home.html" target="_self">Back to home page</a>
+    </div>
+</body>
+
+</html>

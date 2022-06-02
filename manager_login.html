@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=chrome'>
+    <title>Manager login</title>
+    <style>
+        .pp {
+            font-size: 50px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+        }
+        
+        body {
+            background-image: url(a.jfif);
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        img {
+            width: 10%;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        div {
+            border-style: groove;
+            border-radius: 12px;
+            text-align: center;
+            background-color: azure;
+            margin: 5px 500px 100px 500px;
+            size: auto;
+        }
+        
+        form {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        a {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="Home.html" target="_self">Back to home page</a>
+    <p class="pp"><b>AJM COURIERS</b></p>
+    <h1>Manager Login</h1>
+    <div>
+        <img src="login.png" alt="login">
+        <form action="manager_login.php" target="_self" method="post">
+            <label for="Uname">Username</label><br>
+            <input type="text" name="Uname" required><br>
+            <label for="Id">Manager id</label><br><input type="text" name="Id" required><br><br>
+            <label for="Pwd">Password</label><br>
+            <input type="password" name="Pwd" required><br><br>
+            <button>Login</button><br>
+        </form>
+    </div>
+
+</body>
+
+</html>

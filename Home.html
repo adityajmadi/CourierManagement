@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <style type="text/css">
+        .header {
+            font-size: 50px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111;
+        }
+        
+        body {
+            background-image: url(a.jfif);
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .div_forms {
+            border-style: groove;
+            border-radius: 12px;
+            text-align: center;
+            margin-right: 500px;
+            margin-left: 0px;
+        }
+    </style>
+    <script>
+        function letter() {}
+    </script>
+</head>
+
+<body>
+    <div>
+        <p class="header">AJM COURIERS</p>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li><a href="customer_login.html" target="_self">Customer Login</a></li>
+            <li><a href="manager_login.html" target="_self">Manager Login</a></li>
+            <li><a href="deliveryman_login.html" target="_self">Deliveryman Login</a></li>
+        </ul>
+    </div>
+    <br><br><br>
+    <div class="div_forms">
+        <h2>New Order</h2>
+        <form action="info.php" method="post" id="form_info">
+            <label for="C_name"><b>Customer name:</b></label>
+            <input type="text" name="C_name" required><br><br>
+            <label for="P_no"><b>Phone No:</b></label>
+            <input type="tel" name="P_no" maxlength="10" pattern="[0-9]{10}" required><br><br>
+            <small><b>Type of Service Required</b></small><br>
+            <input type="radio" id="letter" value="letter" name="service"><label for="latter"><b>Letter</b></label>
+            <input type="radio" id="package" value="package" name="service"><label for="package"><b>Package</b></label><br>
+            <label for="email"><b>E-mail</b></label><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
+            <b>From Address</b><textarea name="From_Address" id="from" cols="10" rows="2"></textarea><br>
+            <b>To Address</b><textarea name="To_Address" id="to" cols="10" rows="2"></textarea><br>
+            <button>Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
